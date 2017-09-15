@@ -75,7 +75,7 @@ class GreetingsApiGatewayRestController {
 
 
     public String fallback(String name){
-        return "XXXXXXXXXXX";
+        return "greetings-service is not available";
     }
 
     @HystrixCommand(fallbackMethod = "fallback")
